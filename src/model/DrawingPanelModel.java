@@ -1,2 +1,5 @@
-package model;public class DrawingPanelModel {
+package model;
+
+public class DrawingPanelModel {
+
 }
