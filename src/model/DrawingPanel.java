@@ -27,9 +27,7 @@ public class DrawingPanel extends JPanel{
 
 
     public enum ECurrentState {
-
-        //eIdle : eSelecting -> eDrawing 의 중간 단계
-        eIdle, eDrawing, eSelecting
+        eDrawing, eSelecting
     }
 
     public DrawingPanel(){
@@ -52,9 +50,7 @@ public class DrawingPanel extends JPanel{
     }
 
     public void toolbarFunction(String command) {
-        System.out.println("in toolbarFunction  ");
 
-        //TODO: equals cheking
         if(selectedShapeTool==null || !selectedShapeTool.getTooltipname().equals(command)){ //초기 shape 설정. 이전 shape이 없음.
             // 다른 shape 로 변경. eDrawing 모드 .  이미 shape 이 설정되어 있었으나, 다른 shape으로 변경.
             selectedShapeTool = TooltipShape.valueOf(command);
@@ -66,8 +62,6 @@ public class DrawingPanel extends JPanel{
             this.eCurrentState=ECurrentState.eSelecting;
             selectedShapeTool = null;
         }
-        System.out.println("this.selectedShapeTool.getTooltipname() = " + this.selectedShapeTool.getTooltipname());
-                
 
     }
 
