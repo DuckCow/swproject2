@@ -11,8 +11,11 @@ public class Main {
         mainView.setLocationRelativeTo(null);
 
         MainModel mainModel = new MainModel();
-        MainController mainController = new MainController(mainModel,mainView,mainView.drawingPanelView);
-
+        MainController mainController = new MainController(
+                        mainModel,
+                        mainView,
+                        mainView.drawingPanelView,
+                        mainView.toolBarPanelView);
 
     }
 }

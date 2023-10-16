@@ -8,6 +8,8 @@ import java.awt.event.ActionListener;
 public class MainView extends JFrame{
 
     public DrawingPanelView drawingPanelView;
+    public ToolBarPanelView toolBarPanelView;
+
     public MainView(){
         setSize(1000, 1200);
         this.setTitle("SWProject");
@@ -15,8 +17,10 @@ public class MainView extends JFrame{
         BorderLayout borderlayout = new BorderLayout();
         this.setLayout(borderlayout);
         this.drawingPanelView=new DrawingPanelView();
+        this.toolBarPanelView=new ToolBarPanelView();
 
         this.add(this.drawingPanelView,borderlayout.CENTER);
+        this.add(this.toolBarPanelView,borderlayout.SOUTH);
 
 
     }
