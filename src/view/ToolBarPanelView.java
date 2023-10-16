@@ -1,7 +1,6 @@
 package view;
 
 import constant.TooltipShape;
-import controller.MainController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,7 +19,8 @@ public class ToolBarPanelView extends JToolBar {
             button.setIcon(new ImageIcon(TooltipButton.getImage()));
             button.setSelectedIcon(new ImageIcon(TooltipButton.getSelectedImage()));
             button.setActionCommand(TooltipButton.toString());
-            button.setToolTipText(TooltipButton.getTooltipname());
+            button.setToolTipText(TooltipButton.getTooltipName());
+
             this.add(button);
             buttonGroup.add(button);
 

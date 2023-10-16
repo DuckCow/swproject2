@@ -1,13 +1,13 @@
 package constant;
 
+import model.shape.GOval;
 import model.shape.GRectangle;
 import model.shape.GShape;
 
 public enum TooltipShape {
 
-    eRectangle(new GRectangle(), "images/rectangle.png", "images/rectangle-selected.png", "rectangle");
-
-
+    eRectangle(new GRectangle(), "images/rectangle.png", "images/rectangle-selected.png", "eRectangle"),
+    eOval(new GOval(), "images/oval.png", "images/oval-selected.png", "eOval");
 
     private GShape shapeTool;
     private String image;
@@ -34,7 +34,7 @@ public enum TooltipShape {
         return selectedimage;
     }
 
-    public String getTooltipname() {
+    public String getTooltipName() {
         return tooltipname;
     }
 
