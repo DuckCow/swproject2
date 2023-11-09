@@ -5,27 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668d326f-ded6-4516-ae2d-2d6b6d91299d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/drag-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/drag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/oval-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/oval.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/rectangle-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/rectangle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/text-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constant/TooltipShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/DrawingPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/shape/GAnchor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/shape/GRectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/shape/GShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/transformer/GDrawer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/transformer/GTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ToolBarPanelView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/transformer/GMover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/PropertyPanelView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/oval-selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/oval.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constant/TooltipShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/TooltipShape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/DrawingPanelModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MainModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/DrawingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DrawingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/shape/GAnchor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/shape/GOval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/shape/GEllipse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/shape/GRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/shape/GRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/shape/GShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/shape/GShape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/DrawingPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DrawingPanelView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainView.java" afterDir="false" />
     </list>
@@ -38,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -101,11 +94,39 @@
       <option name="presentableId" value="Default" />
       <updated>1697158228342</updated>
       <workItem from="1697158233081" duration="39429000" />
-      <workItem from="1697435559174" duration="4178000" />
+      <workItem from="1697435559174" duration="15165000" />
+      <workItem from="1697591050417" duration="7562000" />
+      <workItem from="1698297008883" duration="13386000" />
+      <workItem from="1698802577143" duration="2411000" />
+      <workItem from="1699158951542" duration="5136000" />
+      <workItem from="1699164123544" duration="10435000" />
+      <workItem from="1699405848196" duration="8778000" />
+      <workItem from="1699447437094" duration="3490000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -4,18 +4,18 @@ import view.MainView;
 
 public class Main {
     public static void main(String[] args) {
+
         MainView mainView=new MainView();
+        MainModel mainModel = new MainModel();
 
         mainView.setVisible(true);
         mainView.setResizable(true);
         mainView.setLocationRelativeTo(null);
 
-        MainModel mainModel = new MainModel();
         MainController mainController = new MainController(
                         mainModel,
-                        mainView,
-                        mainView.drawingPanelView,
-                        mainView.toolBarPanelView);
+                        mainView
+                );
 
     }
 }

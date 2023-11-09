@@ -29,6 +29,12 @@ public class GRectangle extends GShape {
         rectangle.setSize( x2 - rectangle.x, y2 - rectangle.y );
     }
 
+    @Override
+    public void finishMoving(Graphics2D graphics2d, int x, int y) {
+        // TODO Auto-generated method stub
+
+    }
+
 
 
 }

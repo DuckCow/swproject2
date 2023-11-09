@@ -7,13 +7,13 @@ import java.awt.geom.AffineTransform;
 abstract public class GShape {
 
     // components
+
     protected boolean selected;
     private Color lineColor;
     private Color fillColor;
     private int stroke;
+    public Shape shape;
 
-    protected Shape shape;
-    protected GAnchor gAnchors;
 
     private AffineTransform af = null;
 
@@ -23,11 +23,6 @@ abstract public class GShape {
         this.fillColor = null;
         this.selected = false;
         this.stroke = 0;
-        this.gAnchors = new GAnchor();
-    }
-
-    public GAnchor getGAnchor() {
-        return this.gAnchors;
     }
 
 
@@ -44,9 +39,6 @@ abstract public class GShape {
         return this.shape;
     }
 
-    public void setSelected(boolean selected) {
-        this.selected = selected;
-    }
 
     public void setLineColor(Color color) {
         this.lineColor = color;
@@ -64,9 +56,8 @@ abstract public class GShape {
         return this.fillColor;
     }
 
-    public void setNullFillColor() {
-        fillColor = null;
-    }
+
+
 
     public void draw(Graphics2D graphics2d) {
         if (this.stroke != 0) {
@@ -82,18 +73,31 @@ abstract public class GShape {
         graphics2d.draw(this.shape);
         graphics2d.setStroke(new BasicStroke(1));
 
-        if (this.selected) {
-            this.gAnchors.setBoundingRect(this.shape.getBounds());
-            this.gAnchors.draw(graphics2d);
-        }
     }
 
 
     public abstract void setInitPoint(int x1, int y1);
 
+    public void setSelected(boolean selected) {
+        this.selected = selected;
+    }
+
     public abstract void movePoint(int x, int y);
 
     public abstract GShape generateShape();
+
+    public boolean lineContains(int x, int y) { //rectangular가 해당 (x,y) 포안트를 포함하는가.
+        if (this.shape.getBounds().contains(new Point(x, y))) {return true;	}
+        else {	return false;}
+    }
+
+    public void move(int dw, int dh) {
+        af.setToTranslation(dw, dh);
+        this.shape = af.createTransformedShape(this.shape);
+    }
+
+    public abstract void finishMoving(Graphics2D graphics2d, int x, int y);
+
 
 
 }

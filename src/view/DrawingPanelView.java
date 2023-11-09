@@ -19,6 +19,7 @@ public class DrawingPanelView extends JPanel {
     public GShape gShape;
 
 
+
     //객체 리스트 포함
 
     private JButton jbtn;
@@ -47,10 +48,9 @@ public class DrawingPanelView extends JPanel {
                 shape.draw(graphics2d);
             }
         }
+
         repaint();
     }
-
-
 
     public void setDrawingPanelActionListener(ActionListener listener){
         jbtn.addActionListener(listener);
@@ -61,11 +61,6 @@ public class DrawingPanelView extends JPanel {
         this.addMouseListener(mouseHandler);
         // position
         this.addMouseMotionListener(mouseHandler);
-        // wheel
-        this.addMouseWheelListener(mouseHandler);
-
     }
-
-
 
 }

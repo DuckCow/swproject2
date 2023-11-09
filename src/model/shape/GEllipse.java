@@ -5,14 +5,14 @@ import java.awt.geom.Ellipse2D;
 
 
 @SuppressWarnings("serial")
-public class GOval extends GShape{
+public class GEllipse extends GShape{
 
-    public GOval() {
+    public GEllipse() {
         this.shape = new Ellipse2D.Float();
     }
     @Override
     public GShape generateShape() {
-        return new GOval();
+        return new GEllipse();
     }
 
     @Override
@@ -27,5 +27,11 @@ public class GOval extends GShape{
         ellipse.setFrame(ellipse.getX(), ellipse.getY(), x2 - ellipse.getX(), y2 - ellipse.getY());
     }
 
+
+    @Override
+    public void finishMoving(Graphics2D graphics2d, int x, int y) {
+        // TODO Auto-generated method stub
+
+    }
 
 }
